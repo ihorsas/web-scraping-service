@@ -1,8 +1,8 @@
-package selenium;
+package com.lnu.selenium;
 
-import static selenium.DriverManager.getDriver;
+import static com.lnu.selenium.DriverManager.getDriver;
 
-import model.News;
+import com.lnu.model.News;
 import org.openqa.selenium.By;
 
 import java.util.ArrayList;

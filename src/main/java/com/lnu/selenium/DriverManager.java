@@ -1,4 +1,4 @@
-package selenium;
+package com.lnu.selenium;
 
 import io.github.bonigarcia.wdm.config.DriverManagerType;
 import io.github.bonigarcia.wdm.managers.ChromeDriverManager;
