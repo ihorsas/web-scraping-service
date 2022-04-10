@@ -15,14 +15,11 @@ public class PravdaScrapper {
   private final String ROOT_URL = "https://www.pravda.com.ua";
   private final String NEWS_URL = ROOT_URL + "/news/";
 
-  public void getAllNews() {
+  public List<News> getAllNews() {
     try {
       DriverManager.getDriver().get(NEWS_URL);
       List<String> linksToNews = getLinks();
-      List<News> news = getNews(linksToNews.subList(0, 5));
-      for(News news1 : news){
-        System.out.println(news1);
-      }
+      return getNews(linksToNews.subList(0, 5));
     } finally {
       DriverManager.quit();
     }
